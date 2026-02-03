@@ -1,0 +1,329 @@
+
+  /* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+  padding-top: 70px;
+}
+
+/* 🌐 Updated Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff; /* adjust to your design */
+  padding: 10px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+width: 50px;
+height: 40px;
+margin-right: 10px;
+}
+.logo-text {
+font-size: 1.8rem;
+font-weight: bold;
+color: rgb(18, 3, 3);
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li a {
+  color: rgb(13, 9, 9);
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between icon and text */
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+
+.nav-links li a:hover {
+  color: #1a73e8;
+}
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+  .btn-plan {
+    background-color: #1dd1a1;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-plan:hover {
+    background-color: #10ac84;
+  }
+  
+  /* Home Section */
+  .home {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #2980b9, #6dd5fa);
+    text-align: center;
+    color: white;
+  }
+  
+  .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  .home-content {
+    position: relative;
+    z-index: 1;
+    padding-top: 150px;
+  }
+  
+  .main-title {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  /* About Section */
+  #about {
+    background-color: #FFF5EE;
+    text-align: center;
+    color: #333;
+    padding: 100px 20px;
+  }
+  
+  /* Plan Section (Slider styles only under #plans) */
+  #plans .container {
+    position: relative;
+    width: 1500px;
+    height: 500px;
+    margin: 0 auto;
+    box-shadow: 0 30px 50px #dbdbdb;
+    overflow: hidden;
+  }
+  
+  #plans .slide .item {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+  }
+  
+  #plans .slide .item:nth-child(1),
+  #plans .slide .item:nth-child(2) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    transform: none;
+  }
+  
+  #plans .slide .item:nth-child(3) { left: 50%; }
+  #plans .slide .item:nth-child(4) { left: calc(50% + 220px); }
+  #plans .slide .item:nth-child(5) { left: calc(50% + 440px); }
+  #plans .slide .item:nth-child(n + 6) {
+    left: calc(50% + 660px);
+    opacity: 0;
+  }
+  
+  #plans .item .content {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 300px;
+    color: #E0F7FA;
+    transform: translateY(-50%);
+    display: none;
+  }
+  
+  #plans .slide .item:nth-child(2) .content {
+    display: block;
+  }
+  
+  #plans .content .name {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out forwards;
+  }
+  
+  #plans .content .about,
+  #plans .content button {
+    opacity: 0;
+    animation: animate 1s ease-in-out forwards;
+  }
+  
+  @keyframes animate {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+      filter: blur(33px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+  
+  #plans .button {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  #plans .button button {
+    width: 40px;
+    height: 35px;
+    margin: 0 5px;
+    border: 1px solid rgba(255,255,255,0.6);
+    background-color: rgba(255,255,255,0.3);
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #plans .button button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #ffe9e4;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-logo h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .social-icons i {
+    font-size: 18px;
+    color: #fff;
+    background-color: #e74c3c;
+    margin-right: 8px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .footer-column {
+    min-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #e74c3c;
+  }
+  
+  .footer-column p {
+    margin-bottom: 10px;
+  }
+  .dashboard-menu {
+    position: relative;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  .dashboard-menu .dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .dashboard-menu:hover .dropdown {
+    display: block;
+  }
+  
+  .dashboard-menu .dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .dashboard-menu .dropdown a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  

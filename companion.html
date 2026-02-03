@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Find a Travel Companion</title>
+  <link rel="stylesheet" href="companion.css" />
+</head>
+<body style="background-image: url(assets/pic1.jpeg);">
+  
+  <!-- Dashboard Dropdown -->
+  <div class="dashboard-dropdown">
+    <button class="dashboard-btn">Dashboard ⮟</button>
+    <div class="dropdown-content" id="dropdownContent">
+      <a href="profile.html" id="profileLink">Profile</a>
+      <a href="#" id="logoutLink">Logout</a>
+    </div>
+  </div>
+
+  <h2>Answer a few questions to find your perfect travel buddy ✈</h2>
+
+  <!-- Companion Form -->
+  <form id="companionForm">
+
+    <label for="ageGroup">Preferred Age Group:</label>
+    <select id="ageGroup" name="ageGroup" required>
+      <option value="18-25">18-25</option>
+      <option value="26-35">26-35</option>
+      <option value="36-50">36-50</option>
+    </select>
+
+    <label for="interests">Interests (comma-separated):</label>
+    <input id="interests" type="text" name="interests" required />
+
+    <label for="languages">Languages Spoken (comma-separated):</label>
+    <input id="languages" type="text" name="languages" required />
+
+    <label>Preferred Travel Style:</label>
+    <div>
+      <label><input type="checkbox" name="travelStyle" value="Adventure" /> Adventure</label><br />
+      <label><input type="checkbox" name="travelStyle" value="Relaxation" /> Relaxation</label><br />
+      <label><input type="checkbox" name="travelStyle" value="Cultural" /> Cultural</label><br />
+      <label><input type="checkbox" name="travelStyle" value="Nature" /> Nature</label>
+    </div>
+
+    <label>Accommodation Preference:</label>
+    <div>
+      <label><input type="checkbox" name="accommodation" value="Hotel" /> Hotel</label><br />
+      <label><input type="checkbox" name="accommodation" value="Hostel" /> Hostel</label><br />
+      <label><input type="checkbox" name="accommodation" value="Airbnb" /> Airbnb</label>
+    </div>
+
+    <label for="shareExpenses">Are you okay with sharing expenses?</label>
+    <div>
+      <label><input id="shareExpenses" type="checkbox" name="shareExpenses" value="Yes" /> Yes</label>
+    </div>
+
+    <input type="submit" value="Find Companion" />
+  </form>
+
+  <!-- Core Form Script -->
+  <script>
+    document.getElementById('companionForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+  
+      const form = e.target;
+      const travelStyles = Array.from(
+        form.querySelectorAll('input[name="travelStyle"]:checked')
+      ).map(el => el.value);
+  
+      let matches = [];
+  
+      // Fake data logic
+      if (travelStyles.includes("Adventure")) {
+        matches.push({
+          ageGroup: "26-35",
+          interests: ["Hiking", "Climbing", "Road Trips"],
+          languages: ["English", "Spanish"],
+          email:"yash123@gmail.com"
+        });
+      }
+  
+      if (travelStyles.includes("Nature")) {
+        matches.push({
+          ageGroup: "18-25",
+          interests: ["Camping", "Photography", "Wildlife"],
+          languages: ["English", "Hindi"],
+          email:"vaish2703@gmail.com"
+        });
+      }
+  
+      // Store matches and preferences
+      localStorage.setItem('matches', JSON.stringify(matches));
+  
+      const formData = {
+        ageGroup: form.ageGroup.value,
+        interests: form.interests.value,
+        languages: form.languages.value,
+        travelStyle: travelStyles,
+        accommodation: Array.from(form.querySelectorAll('input[name="accommodation"]:checked')).map(el => el.value),
+        shareExpenses: form.querySelector('input[name="shareExpenses"]:checked') ? true : false
+      };
+  
+      localStorage.setItem('companionPrefs', JSON.stringify(formData));
+  
+      // Redirect to tripplan
+      window.location.href = "tripplan.html";
+    });
+  </script>
+  
+  <!-- Dropdown Menu and Navigation -->
+  <script>
+    const dashboardBtn = document.querySelector('.dashboard-btn');
+    const dropdownContent = document.getElementById('dropdownContent');
+
+    dashboardBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdownContent.style.display =
+        dropdownContent.style.display === 'block' ? 'none' : 'block';
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.dashboard-dropdown')) {
+        dropdownContent.style.display = 'none';
+      }
+    });
+
+    document.getElementById('logoutLink').addEventListener('click', (e) => {
+      e.preventDefault();
+      localStorage.clear();
+      window.location.href = "index.html";
+    });
+
+    document.getElementById('profileLink').addEventListener('click', () => {
+      window.location.href = "profile.html";
+    });
+  </script>
+
+  <!-- Firebase Auth and Logic Scripts -->
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="companionLogic.js"></script>
+
+</body>
+</html>

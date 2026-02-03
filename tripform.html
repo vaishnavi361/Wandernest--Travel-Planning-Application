@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plan Your Dream Trip - WanderNest</title>
+  <link rel="stylesheet" href="tripform.css" />
+  <style>
+    .autocomplete-container {
+      position: relative;
+      width: 100%;
+    }
+
+    .autocomplete-results {
+      position: absolute;
+      width: 100%;
+      max-height: 200px;
+      overflow-y: auto;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+      z-index: 1000;
+    }
+
+    .autocomplete-item {
+      padding: 10px;
+      cursor: pointer;
+      color:black;
+    }
+
+    .autocomplete-item:hover {
+      background-color: #f0f0f0;
+    }
+
+    .selected {
+      background-color: #007bff;
+      color: white;
+    }
+  </style>
+</head>
+<body class="trip-page">
+  <div class="trip-container">
+    <h2>Plan Your Dream Trip 🌍</h2>
+    <form id="tripForm" class="trip-form">
+
+      <label for="destination">Destination</label>
+      <div class="autocomplete-container">
+        <input
+          type="text"
+          id="destination"
+          name="destination"
+          placeholder="Enter destination"
+          required
+        />
+        <ul id="autocomplete-results" class="autocomplete-results" style="display: none;"></ul>
+      </div>
+
+      <label for="startDate">Start Date</label>
+      <input type="date" id="startDate" name="startDate" required />
+
+      <label for="endDate">End Date</label>
+      <input type="date" id="endDate" name="endDate" required />
+
+      <label for="budget">Budget</label>
+      <div class="button-group">
+        <button type="button" class="select-btn" data-budget="Low (₹)">Low (₹)</button>
+        <button type="button" class="select-btn" data-budget="Medium (₹₹)">Medium (₹₹)</button>
+        <button type="button" class="select-btn" data-budget="High (₹₹₹)">High (₹₹₹)</button>
+      </div>
+
+      <label for="travelType">Travel Type</label>
+      <div class="button-group" id="travelTypeGroup">
+        <button type="button" class="select-btn travel-type-btn" data-traveltype="Solo">Solo</button>
+        <button type="button" class="select-btn travel-type-btn" data-traveltype="Friends">Friends</button>
+        <button type="button" class="select-btn travel-type-btn" data-traveltype="Family">Family</button>
+        <button type="button" class="select-btn travel-type-btn" data-traveltype="Couple">Couple</button>
+      </div>
+
+      <label class="checkbox-container">
+        <input type="checkbox" id="needCompanions" name="needCompanions" />
+        I want travel companions
+        <span class="info-btn" title="Check this if you're open to finding travel buddies!">ℹ</span>
+      </label>
+
+      <button type="submit" class="submit-btn">Continue</button>
+    </form>
+  </div>
+  <div class="dashboard-dropdown">
+    <button class="dashboard-btn">Dashboard ⮟</button>
+    <div class="dropdown-content" id="dropdownContent">
+      <a href="profile.html" id="profileLink">Profile</a>
+      <a href="#" id="logoutLink">Logout</a>
+    </div>
+  </div>
+  
+  <script>
+    const tripForm = document.getElementById('tripForm');
+    const budgetButtons = document.querySelectorAll('.select-btn[data-budget]');
+    const travelTypeButtons = document.querySelectorAll('.travel-type-btn');
+    const destinationInput = document.getElementById('destination');
+    const startDateInput = document.getElementById('startDate');
+    const endDateInput = document.getElementById('endDate');
+    const needCompanionsCheckbox = document.getElementById('needCompanions');
+
+    budgetButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        budgetButtons.forEach(btn => btn.classList.remove('selected'));
+        button.classList.add('selected');
+      });
+    });
+
+    travelTypeButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        travelTypeButtons.forEach(btn => btn.classList.remove('selected'));
+        button.classList.add('selected');
+      });
+    });
+
+    tripForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const formData = {
+        destination: destinationInput.value,
+        startDate: startDateInput.value,
+        endDate: endDateInput.value,
+        budget: [...budgetButtons].find(btn => btn.classList.contains('selected'))?.dataset.budget,
+        travelType: [...travelTypeButtons].find(btn => btn.classList.contains('selected'))?.dataset.traveltype,
+        needCompanions: needCompanionsCheckbox.checked
+      };
+
+      if (!formData.destination) {
+        alert("Please enter a destination.");
+        return;
+      }
+
+      localStorage.setItem("tripPlan", JSON.stringify(formData));
+      console.log("Need Companions: ", formData.needCompanions);
+      if (formData.needCompanions) {
+      window.location.href = "companion.html"; // Redirect to the companion details page
+    } else {
+      window.location.href = "tripplan.html"; // Proceed to trip planning page
+    }
+    });
+
+    // Photon Autocomplete
+    const resultsBox = document.getElementById('autocomplete-results');
+
+    destinationInput.addEventListener('input', async () => {
+      const query = destinationInput.value.trim();
+      if (query.length < 2) {
+        resultsBox.style.display = 'none';
+        return;
+      }
+
+      try {
+        const res = await fetch(`https://photon.komoot.io/api/?q=${encodeURIComponent(query)}&limit=5`);
+        const data = await res.json();
+
+        resultsBox.innerHTML = '';
+        if (data.features && data.features.length > 0) {
+          data.features.forEach(feature => {
+            const item = document.createElement('li');
+            const name = feature.properties.name;
+            const country = feature.properties.country || '';
+            const full = `${name}${country ? ', ' + country : ''}`;
+            item.textContent = full;
+            item.className = 'autocomplete-item';
+            item.onclick = () => {
+              destinationInput.value = full;
+              resultsBox.style.display = 'none';
+            };
+            resultsBox.appendChild(item);
+          });
+          resultsBox.style.display = 'block';
+        } else {
+          resultsBox.style.display = 'none';
+        }
+      } catch (err) {
+        console.error("Autocomplete error:", err);
+        resultsBox.style.display = 'none';
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.autocomplete-container')) {
+        resultsBox.style.display = 'none';
+      }
+    });
+  </script>
+  <script>
+    const dashboardBtn = document.querySelector('.dashboard-btn');
+const dropdownContent = document.getElementById('dropdownContent');
+
+dashboardBtn.addEventListener('click', (e) => {
+  e.stopPropagation(); // prevent click bubbling
+  dropdownContent.style.display =
+    dropdownContent.style.display === 'block' ? 'none' : 'block';
+});
+
+// Close dropdown if clicked outside
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.dashboard-dropdown')) {
+    dropdownContent.style.display = 'none';
+  }
+});
+const logoutLink = document.getElementById('logoutLink');
+const profileLink = document.getElementById('profileLink');
+
+// Handle logout
+logoutLink.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  window.location.href = "index.html";
+});
+
+// Profile link already works by default, but if needed:
+profileLink.addEventListener('click', () => {
+  window.location.href = "profile.html";
+});
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+    "usedCompanionFeature": true,
+    "matches": [
+      {
+        "name": "Yashaswini",
+        "age": 19,
+        "interests": ["Photography"],
+        "languages": ["Kannada"],
+        "travelStyle": ["Cultural"],
+        "accommodation": ["Hostels"],
+        "shareExpenses": true
+      },
+      {
+        "name": "Vaishnavi",
+        "age": 28,
+        "interests": ["Food Tours"],
+        "languages": ["Hindi"],
+        "travelStyle": ["Nature"],
+        "accommodation": ["Airbnb"],
+        "shareExpenses": false
+      }
+    ]
+  }
+  

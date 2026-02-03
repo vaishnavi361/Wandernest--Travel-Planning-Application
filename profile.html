@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Profile</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body style="background-image: url(assets/bg.jpg);">
+  <div class="profile-container">
+    <h1>Welcome, <span id="username">User</span> 👋</h1>
+
+    <h2>Your Previous Trips</h2>
+    <ul id="tripList">
+      <!-- Trip data will be injected here -->
+    </ul>
+  </div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+    import {
+      getFirestore,
+      collection,
+      query,
+      where,
+      getDocs
+    } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyB6LbIj3LRPYbeoFa3BN3CiUdKGJ8ByM_g",
+      authDomain: "login-22955.firebaseapp.com",
+      projectId: "login-22955",
+      storageBucket: "login-22955.appspot.com",
+      messagingSenderId: "221747560271",
+      appId: "1:221747560271:web:00c905bb5b55d1504f8f3a"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+
+    const usernameDisplay = document.getElementById('username');
+    const tripList = document.getElementById('tripList');
+
+    onAuthStateChanged(auth, async (user) => {
+      if (user) {
+        const email = user.email;
+        usernameDisplay.textContent = email;
+
+        // Query trips associated with this user
+        const q = query(collection(db, "tripPlans"), where("userEmail", "==", email));
+        const querySnapshot = await getDocs(q);
+
+        if (querySnapshot.empty) {
+          tripList.innerHTML = "<li>No previous trips found.</li>";
+        } else {
+          querySnapshot.forEach((doc) => {
+            const trip = doc.data();
+            const li = document.createElement("li");
+            li.textContent = `Destination: ${trip.destination}, Dates: ${trip.startDate} to ${trip.endDate}`;
+            tripList.appendChild(li);
+          });
+        }
+      } else {
+        window.location.href = "index.html"; // redirect to login if not logged in
+      }
+    });
+  </script>
+  
+  <script src="stireTrip.js"></script>
+</body>
+</html>

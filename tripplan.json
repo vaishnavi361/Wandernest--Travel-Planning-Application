@@ -1,0 +1,1276 @@
+{
+    "paris, france": {
+    "destination": "Paris, France",
+    "bannerImage": "./assets/image/paris, france.jpg",
+    "hotels": [
+      {
+        "name": "Hôtel Plaza Athénée",
+        "location": "Paris, France",
+        "rating": "5 Star",
+        "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
+        "map": "https://www.google.com/maps/search/?api=1&query=Hôtel+Plaza+Athénée+Paris"
+      },
+      {
+        "name": "Le Meurice",
+        "location": "Paris, France",
+        "rating": "5 Star",
+        "image": "./assets/image/Le Meurice.jpg",
+        "map": "https://www.google.com/maps/search/?api=1&query=Le+Meurice+Paris"
+      },
+      {
+        "name": "Shangri-La Paris",
+        "location": "Paris, France",
+        "rating": "5 Star",
+        "image": "/assets/image/Shangri-La Paris.jpeg",
+        "map": "https://www.google.com/maps/search/?api=1&query=Shangri-La+Paris"
+      }
+    ],
+    "days": [
+      {
+        "day": 1,
+        "name": "Eiffel Tower",
+        "description": "Iconic Parisian landmark with panoramic city views.",
+        "ticket": "€25",
+        "travelTime": "15 mins from city center",
+        "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Eiffel+Tower+Paris"
+      },
+      {
+        "day": 1,
+        "name": "Louvre Museum",
+        "description": "World’s largest art museum, home to the Mona Lisa.",
+        "ticket": "€17",
+        "travelTime": "10 mins from Eiffel Tower",
+        "image": "/assets/image/Louvre Museum.jpg",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Louvre+Museum+Paris"
+      },
+      {
+        "day": 2,
+        "name": "Notre-Dame Cathedral",
+        "description": "Famous medieval Catholic cathedral with stunning architecture.",
+        "ticket": "Free (tower extra)",
+        "travelTime": "10 mins from Louvre",
+        "image": "https://images.unsplash.com/photo-1563298723-dcfebaa392e3",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Notre-Dame+Cathedral+Paris"
+      },
+      {
+        "day": 2,
+        "name": "Montmartre & Sacré-Cœur",
+        "description": "Historic hilltop district with panoramic views and a basilica.",
+        "ticket": "Free",
+        "travelTime": "20 mins from center",
+        "image": "/assets/image/Montmartre.jpg",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Montmartre+Paris"
+      },
+      {
+        "day": 3,
+        "name": "Palace of Versailles",
+        "description": "Lavish royal palace and gardens on the city's outskirts.",
+        "ticket": "€18",
+        "travelTime": "40 mins from Paris by train",
+        "image": "/assets/image/Palace of Versailles.jpg",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Palace+of+Versailles"
+      },
+      {
+        "day": 4,
+        "name": "Sainte-Chapelle",
+        "description": "Gothic-style chapel with stunning stained glass windows.",
+        "ticket": "€11.50",
+        "travelTime": "5 mins from Notre-Dame",
+        "image": "/assets/image/Sainte-Chapelle.jpg",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sainte-Chapelle+Paris"
+      },
+      {
+        "day": 4,
+        "name": "Seine River Cruise",
+        "description": "Romantic boat tour offering scenic views of Paris landmarks.",
+        "ticket": "€15-20",
+        "travelTime": "5 mins from Sainte-Chapelle",
+        "image": "/assets/image/Seine River Cruise.jpg",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Seine+River+Cruise+Paris"
+      },
+      {
+        "day": 5,
+        "name": "Musée d'Orsay",
+        "description": "Impressionist masterpieces housed in a beaux-arts railway station.",
+        "ticket": "€14",
+        "travelTime": "10 mins from Eiffel Tower",
+        "image": "/assets/image/Musée d'Orsay.jpg",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Musée+d'Orsay+Paris"
+      },
+      {
+        "day": 5,
+        "name": "Tuileries Garden",
+        "description": "Formal gardens perfect for a leisurely afternoon stroll.",
+        "ticket": "Free",
+        "travelTime": "5 mins from Musée d'Orsay",
+        "image": "/assets/image/Tuileries Garden.jpg",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tuileries+Garden+Paris"
+      },
+      {
+        "day": 6,
+        "name": "Luxembourg Gardens",
+        "description": "Charming garden with fountains, statues, and open green space.",
+        "ticket": "Free",
+        "travelTime": "15 mins from Notre-Dame",
+        "image": "/assets/image/Luxembourg Gardens.jpg",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Luxembourg+Gardens+Paris"
+      },
+      {
+        "day": 6,
+        "name": "Pantheon",
+        "description": "Neoclassical mausoleum housing notable French citizens.",
+        "ticket": "€9",
+        "travelTime": "5 mins from Luxembourg Gardens",
+        "image": "/assets/image/Pantheon.jpg",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pantheon+Paris"
+      },
+      {
+        "day": 7,
+        "name": "Champs-Élysées & Arc de Triomphe",
+        "description": "Paris's most famous avenue ending at the historic monument.",
+        "ticket": "€13 (Arc entrance)",
+        "travelTime": "15 mins from Eiffel Tower",
+        "image": "/assets/image/Champs-Élysées & Arc de Triomphe.jpg",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Arc+de+Triomphe+Paris"
+      },
+      {
+        "day": 7,
+        "name": "Galeries Lafayette",
+        "description": "Historic department store with panoramic rooftop views.",
+        "ticket": "Free",
+        "travelTime": "10 mins from Arc de Triomphe",
+        "image": "/assets/image/Galeries Lafayette.jpg",
+        "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Galeries+Lafayette+Paris"
+      }
+    ]
+  },
+   "bali, indonesia": {
+"destination": "Bali, Indonesia",
+"bannerImage": "https://wallpaperaccess.com/full/373636.jpg",
+"hotels": [
+  {
+    "name": "Four Seasons Resort Bali at Sayan",
+    "location": "Bali, Indonesia",
+    "rating": "5 Star",
+    "image": "https://cdn.designrulz.com/wp-content/uploads/2016/08/Four-Seasons-Resort-at-Sayan-designrulz-1.jpg",
+    "map": "https://www.google.com/maps/search/?api=1&query=Four+Seasons+Resort+Bali+at+Sayan"
+  },
+  {
+    "name": "The St. Regis Bali Resort",
+    "location": "Bali, Indonesia",
+    "rating": "5 Star",
+    "image": "https://cache.marriott.com/marriottassets/marriott/DPSXR/dpsxr-restaurant-3124-hor-clsc.jpg",
+    "map": "https://www.google.com/maps/search/?api=1&query=The+St.+Regis+Bali+Resort"
+  },
+  {
+    "name": "Alila Villas Uluwatu",
+    "location": "Bali, Indonesia",
+    "rating": "5 Star",
+    "image": "https://cdn.luxurytravelmag.com.au/wp-content/uploads/2023/03/HERO_Alila-Villas-Uluwatu-Aerial-6.jpg",
+    "map": "https://www.google.com/maps/search/?api=1&query=Alila+Villas+Uluwatu+Bali"
+  }
+],
+"days": [
+  {
+    "day": 1,
+    "name": "Uluwatu Temple",
+    "description": "Clifftop temple offering sunset views and traditional Kecak dance shows.",
+    "ticket": "IDR 30,000",
+    "travelTime": "1 hour from Ubud",
+    "image": "https://images.pexels.com/photos/2166552/pexels-photo-2166552.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Uluwatu+Temple+Bali"
+  },
+  {
+    "day": 1,
+    "name": "Jimbaran Bay",
+    "description": "Beautiful beach known for seafood dinners by the sea.",
+    "ticket": "Free",
+    "travelTime": "20 mins from Uluwatu",
+    "image": "https://images.pexels.com/photos/1363876/pexels-photo-1363876.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jimbaran+Bay+Bali"
+  },
+  {
+    "day": 2,
+    "name": "Tegallalang Rice Terrace",
+    "description": "Famous for its stunning green rice paddies and photo ops.",
+    "ticket": "IDR 15,000",
+    "travelTime": "30 mins from Ubud",
+    "image": "https://images.pexels.com/photos/208773/pexels-photo-208773.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tegallalang+Rice+Terrace+Bali"
+  },
+  {
+    "day": 2,
+    "name": "Sacred Monkey Forest Sanctuary",
+    "description": "Nature reserve and Hindu temple complex inhabited by monkeys.",
+    "ticket": "IDR 80,000",
+    "travelTime": "10 mins from Ubud",
+    "image": "https://images.pexels.com/photos/219906/pexels-photo-219906.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Monkey+Forest+Ubud+Bali"
+  },
+  {
+    "day": 3,
+    "name": "Mount Batur Sunrise Trek",
+    "description": "Popular early morning trek to see sunrise from an active volcano.",
+    "ticket": "IDR 150,000 (with guide)",
+    "travelTime": "2 hours drive before trek",
+    "image": "https://images.pexels.com/photos/1231036/pexels-photo-1231036.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mount+Batur+Bali"
+  },
+  {
+    "day": 4,
+    "name": "Tirta Empul Temple",
+    "description": "Sacred water temple famous for purification rituals.",
+    "ticket": "IDR 50,000",
+    "travelTime": "30 mins from Ubud",
+    "image": "https://images.pexels.com/photos/1191411/pexels-photo-1191411.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tirta+Empul+Bali"
+  },
+  {
+    "day": 4,
+    "name": "Goa Gajah (Elephant Cave)",
+    "description": "Ancient temple with carved rock entrances and bathing pools.",
+    "ticket": "IDR 15,000",
+    "travelTime": "15 mins from Ubud",
+    "image": "https://images.pexels.com/photos/2589640/pexels-photo-2589640.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Goa+Gajah+Bali"
+  },
+  {
+    "day": 5,
+    "name": "Nusa Penida Island",
+    "description": "Island day trip with dramatic cliffs, beaches, and crystal-clear waters.",
+    "ticket": "IDR 100,000 (ferry)",
+    "travelTime": "1 hour by boat from Sanur",
+    "image": "https://images.pexels.com/photos/2343461/pexels-photo-2343461.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nusa+Penida+Bali"
+  },
+  {
+    "day": 6,
+    "name": "Seminyak Beach",
+    "description": "Trendy beach destination with upscale cafes and nightlife.",
+    "ticket": "Free",
+    "travelTime": "30 mins from Kuta",
+    "image": "https://images.pexels.com/photos/2311456/pexels-photo-2311456.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Seminyak+Beach+Bali"
+  },
+  {
+    "day": 6,
+    "name": "Beach Club at Potato Head",
+    "description": "Chill spot with poolside vibes, food, drinks, and music.",
+    "ticket": "Free entry (food/drinks extra)",
+    "travelTime": "10 mins walk from Seminyak",
+    "image": "https://images.pexels.com/photos/2884865/pexels-photo-2884865.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Potato+Head+Beach+Club+Bali"
+  },
+  {
+    "day": 7,
+    "name": "Tanah Lot Temple",
+    "description": "Sea temple famous for its offshore setting and sunsets.",
+    "ticket": "IDR 60,000",
+    "travelTime": "1 hour from Seminyak",
+    "image": "https://images.pexels.com/photos/2699231/pexels-photo-2699231.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tanah+Lot+Temple+Bali"
+  },
+  {
+    "day": 7,
+    "name": "Shopping at Ubud Market",
+    "description": "Local market offering handicrafts, clothing, and souvenirs.",
+    "ticket": "Free to browse",
+    "travelTime": "Central Ubud",
+    "image": "https://images.pexels.com/photos/1730046/pexels-photo-1730046.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ubud+Art+Market+Bali"
+  }
+]
+},
+"goa, india": {
+"destination": "Goa, India",
+"bannerImage": "https://www.lasociedadgeografica.com/blog/uploads/2018/02/goa.jpg",
+"hotels": [
+  {
+    "name": "Taj Exotica Resort & Spa",
+    "location": "Goa, India",
+    "rating": "5 Star",
+    "image": "https://images.pexels.com/photos/2611026/pexels-photo-2611026.jpeg",
+    "map": "https://www.google.com/maps/search/?api=1&query=Taj+Exotica+Goa"
+  },
+  {
+    "name": "W Goa",
+    "location": "Goa, India",
+    "rating": "5 Star",
+    "image": "https://images.pexels.com/photos/2611028/pexels-photo-2611028.jpeg",
+    "map": "https://www.google.com/maps/search/?api=1&query=W+Goa+Hotel"
+  },
+  {
+    "name": "The Leela Goa",
+    "location": "Goa, India",
+    "rating": "5 Star",
+    "image": "https://images.pexels.com/photos/1666021/pexels-photo-1666021.jpeg",
+    "map": "https://www.google.com/maps/search/?api=1&query=The+Leela+Goa"
+  }
+],
+"days": [
+  {
+    "day": 1,
+    "name": "Baga Beach",
+    "description": "Lively beach known for water sports, beach shacks, and nightlife.",
+    "ticket": "Free",
+    "travelTime": "20 mins from Calangute",
+    "image": "https://images.pexels.com/photos/2704566/pexels-photo-2704566.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Baga+Beach+Goa"
+  },
+  {
+    "day": 1,
+    "name": "Tito’s Lane",
+    "description": "Popular party street with clubs, bars, and music.",
+    "ticket": "Entry varies",
+    "travelTime": "Walking distance from Baga Beach",
+    "image": "https://images.pexels.com/photos/3033243/pexels-photo-3033243.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Titos+Lane+Goa"
+  },
+  {
+    "day": 2,
+    "name": "Aguada Fort",
+    "description": "Historic 17th-century Portuguese fort with panoramic views.",
+    "ticket": "₹25",
+    "travelTime": "15 mins from Candolim",
+    "image": "https://images.pexels.com/photos/60703/pexels-photo-60703.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fort+Aguada+Goa"
+  },
+  {
+    "day": 2,
+    "name": "SinQ Nightclub",
+    "description": "Trendy nightclub and lounge for party lovers.",
+    "ticket": "₹1500 (approx with cover)",
+    "travelTime": "10 mins from Fort Aguada",
+    "image": "https://images.pexels.com/photos/1674466/pexels-photo-1674466.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=SinQ+Nightclub+Goa"
+  },
+  {
+    "day": 3,
+    "name": "Dudhsagar Waterfalls",
+    "description": "Stunning four-tiered waterfall located in the Western Ghats.",
+    "ticket": "₹100 + Jeep charges",
+    "travelTime": "2 hours from Panjim",
+    "image": "https://images.pexels.com/photos/3889980/pexels-photo-3889980.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Dudhsagar+Waterfalls+Goa"
+  },
+  {
+    "day": 4,
+    "name": "Old Goa Churches",
+    "description": "Explore UNESCO-listed churches like Basilica of Bom Jesus.",
+    "ticket": "Free",
+    "travelTime": "30 mins from Panjim",
+    "image": "https://images.pexels.com/photos/1615965/pexels-photo-1615965.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Old+Goa+Churches"
+  },
+  {
+    "day": 4,
+    "name": "Fontainhas Latin Quarter",
+    "description": "Colorful colonial-era Latin Quarter with Portuguese charm.",
+    "ticket": "Free",
+    "travelTime": "15 mins from Old Goa",
+    "image": "https://images.pexels.com/photos/2140926/pexels-photo-2140926.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fontainhas+Goa"
+  },
+  {
+    "day": 5,
+    "name": "Anjuna Flea Market",
+    "description": "Vibrant Wednesday market with clothes, jewelry, and crafts.",
+    "ticket": "Free",
+    "travelTime": "10 mins from Baga",
+    "image": "https://images.pexels.com/photos/2531237/pexels-photo-2531237.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Anjuna+Flea+Market+Goa"
+  },
+  {
+    "day": 5,
+    "name": "Chapora Fort",
+    "description": "Scenic fort best known from the movie 'Dil Chahta Hai'.",
+    "ticket": "Free",
+    "travelTime": "10 mins from Anjuna",
+    "image": "https://images.pexels.com/photos/2397659/pexels-photo-2397659.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chapora+Fort+Goa"
+  },
+  {
+    "day": 6,
+    "name": "Palolem Beach",
+    "description": "Beautiful crescent-shaped beach in South Goa, perfect for relaxation.",
+    "ticket": "Free",
+    "travelTime": "2 hours from North Goa",
+    "image": "https://images.pexels.com/photos/1712928/pexels-photo-1712928.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Palolem+Beach+Goa"
+  },
+  {
+    "day": 7,
+    "name": "Spice Plantation Tour",
+    "description": "Guided tour to explore local spice farms and enjoy a Goan lunch.",
+    "ticket": "₹500 (with lunch)",
+    "travelTime": "45 mins from Panjim",
+    "image": "https://images.pexels.com/photos/1359389/pexels-photo-1359389.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Spice+Plantation+Goa"
+  },
+  {
+    "day": 7,
+    "name": "Sunset Cruise on Mandovi River",
+    "description": "Enjoy music, folk dance, and sunset views on a boat cruise.",
+    "ticket": "₹500",
+    "travelTime": "Departs from Panjim Jetty",
+    "image": "https://images.pexels.com/photos/1005427/pexels-photo-1005427.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mandovi+River+Cruise+Goa"
+  }
+]
+},
+"spain, spain": {
+"destination": "Spain,Spain",
+"bannerImage": "https://idsb.tmgrup.com.tr/ly/uploads/images/2023/04/26/269508.jpg",
+"hotels": [
+  {
+    "name": "Mandarin Oriental Ritz, Madrid",
+    "location": "Madrid, Spain",
+    "rating": "5 Star",
+    "image": "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg",
+    "map": "https://www.google.com/maps/search/?api=1&query=Mandarin+Oriental+Ritz+Madrid"
+  },
+  {
+    "name": "W Barcelona",
+    "location": "Barcelona, Spain",
+    "rating": "5 Star",
+    "image": "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg",
+    "map": "https://www.google.com/maps/search/?api=1&query=W+Hotel+Barcelona"
+  },
+  {
+    "name": "Hotel Alhambra Palace",
+    "location": "Granada, Spain",
+    "rating": "5 Star",
+    "image": "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg",
+    "map": "https://www.google.com/maps/search/?api=1&query=Hotel+Alhambra+Palace+Granada"
+  }
+],
+"days": [
+  {
+    "day": 1,
+    "name": "Royal Palace of Madrid",
+    "description": "Spain’s grand royal palace with lavish rooms and gardens.",
+    "ticket": "€12",
+    "travelTime": "10 mins from city center",
+    "image": "https://images.pexels.com/photos/705792/pexels-photo-705792.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Royal+Palace+of+Madrid"
+  },
+  {
+    "day": 2,
+    "name": "Museo del Prado",
+    "description": "One of the world's premier art galleries with works by Spanish masters.",
+    "ticket": "€15",
+    "travelTime": "10 mins walk from Royal Palace",
+    "image": "https://images.pexels.com/photos/1643389/pexels-photo-1643389.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Prado+Museum+Madrid"
+  },
+  {
+    "day": 3,
+    "name": "Sagrada Família",
+    "description": "Iconic basilica designed by Gaudí, still under construction.",
+    "ticket": "€26",
+    "travelTime": "2.5 hours train to Barcelona",
+    "image": "https://images.pexels.com/photos/804372/pexels-photo-804372.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sagrada+Familia+Barcelona"
+  },
+  {
+    "day": 4,
+    "name": "Park Güell",
+    "description": "Colorful mosaic park designed by Antoni Gaudí, offering city views.",
+    "ticket": "€10",
+    "travelTime": "15 mins from Sagrada Família",
+    "image": "https://images.pexels.com/photos/1619315/pexels-photo-1619315.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Park+Güell+Barcelona"
+  },
+  {
+    "day": 5,
+    "name": "Alhambra Palace",
+    "description": "Stunning Moorish palace and fortress complex in Granada.",
+    "ticket": "€14",
+    "travelTime": "6 hours from Barcelona via train",
+    "image": "https://images.pexels.com/photos/2026457/pexels-photo-2026457.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Alhambra+Granada"
+  },
+  {
+    "day": 6,
+    "name": "Seville Cathedral & Giralda Tower",
+    "description": "Gothic cathedral with a climbable bell tower and Columbus' tomb.",
+    "ticket": "€11",
+    "travelTime": "3 hours from Granada by train",
+    "image": "https://images.pexels.com/photos/724546/pexels-photo-724546.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Seville+Cathedral"
+  },
+  {
+    "day": 7,
+    "name": "Plaza de España, Seville",
+    "description": "Majestic square featuring fountains, tiled alcoves, and boat rides.",
+    "ticket": "Free",
+    "travelTime": "10 mins from Cathedral",
+    "image": "https://images.pexels.com/photos/2018461/pexels-photo-2018461.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Plaza+de+España+Seville"
+  }
+]
+},
+"mumbai, india": {
+"destination": "Mumbai, India",
+"bannerImage": "https://lp-cms-production.imgix.net/image_browser/Mumbai_nightlife_S.jpg?auto=format&fit=crop&q=40&sharp=10&vib=20&ixlib=react-8.6.4",
+"hotels": [
+  {
+    "name": "The Taj Mahal Palace",
+    "location": "Mumbai, India",
+    "rating": "5 Star",
+    "image": "https://www.cfmedia.vfmleonardo.com/imageRepo/7/0/104/36/7/TMP_Exterior_-_1200x628_S.jpg",
+    "map": "https://www.google.com/maps/search/?api=1&query=The+Taj+Mahal+Palace+Mumbai"
+  },
+  {
+    "name": "The Oberoi Mumbai",
+    "location": "Mumbai, India",
+    "rating": "5 Star",
+    "image": "https://assets.architecturaldigest.in/photos/60083e11a8f8397741704404/16:9/w_1280,c_limit/The-Oberoi-Mumbai-feature-image-1366x768.jpg",
+    "map": "https://www.google.com/maps/search/?api=1&query=The+Oberoi+Mumbai"
+  },
+  {
+    "name": "Trident Nariman Point",
+    "location": "Mumbai, India",
+    "rating": "5 Star",
+    "image": "https://www.authenticindiatours.com/app/uploads/2022/03/Trident-Hotel-Mumbai-1-1400x550-c-default.jpg",
+    "map": "https://www.google.com/maps/search/?api=1&query=Trident+Nariman+Point+Mumbai"
+  }
+],
+"days": [
+  {
+    "day": 1,
+    "name": "Gateway of India",
+    "description": "Iconic arch monument facing the Arabian Sea.",
+    "ticket": "Free",
+    "travelTime": "20 mins from central Mumbai",
+    "image": "https://wallpaperaccess.com/full/4850869.jpg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gateway+of+India+Mumbai"
+  },
+  {
+    "day": 2,
+    "name": "Elephanta Caves",
+    "description": "UNESCO heritage caves with ancient rock-cut sculptures.",
+    "ticket": "₹40 + ferry cost",
+    "travelTime": "1 hour ferry ride from Gateway",
+    "image": "https://images.pexels.com/photos/5968122/pexels-photo-5968122.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Elephanta+Caves+Mumbai"
+  },
+  {
+    "day": 3,
+    "name": "Chhatrapati Shivaji Maharaj Terminus",
+    "description": "Gothic Revival railway station and UNESCO site.",
+    "ticket": "Free (station entry)",
+    "travelTime": "15 mins from Fort area",
+    "image": "https://thumbs.dreamstime.com/b/jul-panorama-image-chhatrapati-shivaji-terminus-cst-railway-station-mumbai-fine-example-gothic-architecture-153204911.jpg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chhatrapati+Shivaji+Maharaj+Terminus"
+  },
+  {
+    "day": 4,
+    "name": "Marine Drive",
+    "description": "Picturesque promenade, especially at sunset.",
+    "ticket": "Free",
+    "travelTime": "10 mins from Nariman Point",
+    "image": "hhttps://www.visittnt.com/blog/wp-content/uploads/2020/01/marine-drive.jpg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Marine+Drive+Mumbai"
+  },
+  {
+    "day": 5,
+    "name": "Haji Ali Dargah",
+    "description": "Famous mosque located on an islet off the coast.",
+    "ticket": "Free",
+    "travelTime": "20 mins from central Mumbai",
+    "image": "https://thetravelshots.com/wp-content/uploads/2020/12/haji-ali-dargah2.jpg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Haji+Ali+Dargah+Mumbai"
+  },
+  {
+    "day": 6,
+    "name": "Sanjay Gandhi National Park & Kanheri Caves",
+    "description": "Nature park with ancient Buddhist cave carvings.",
+    "ticket": "₹58 + ₹200 (Kanheri Caves)",
+    "travelTime": "1.5 hours from city center",
+    "image": "https://static.india.com/wp-content/uploads/2023/06/kanheri-caves.jpg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kanheri+Caves+Mumbai"
+  },
+  {
+    "day": 7,
+    "name": "Colaba Causeway & Shopping",
+    "description": "Bustling street for shopping, food, and souvenirs.",
+    "ticket": "Free (shopping costs vary)",
+    "travelTime": "Near Gateway of India",
+    "image": "https://images.mid-day.com/images/images/2023/jul/colabacausemidcov_d.jpg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Colaba+Causeway+Mumbai"
+  }
+]
+},
+"las vegas, united states": {
+"destination": "Las Vegas, United States",
+"bannerImage": "https://images.pexels.com/photos/261146/pexels-photo-261146.jpeg",
+"hotels": [
+  {
+    "name": "Bellagio Hotel & Casino",
+    "location": "Las Vegas, United States",
+    "rating": "5 Star",
+    "image": "https://images.pexels.com/photos/261146/pexels-photo-261146.jpeg",
+    "map": "https://www.google.com/maps/search/?api=1&query=Bellagio+Hotel+Las+Vegas"
+  },
+  {
+    "name": "The Venetian Resort",
+    "location": "Las Vegas, United States",
+    "rating": "5 Star",
+    "image": "https://images.pexels.com/photos/1619798/pexels-photo-1619798.jpeg",
+    "map": "https://www.google.com/maps/search/?api=1&query=The+Venetian+Resort+Las+Vegas"
+  },
+  {
+    "name": "Wynn Las Vegas",
+    "location": "Las Vegas, United States",
+    "rating": "5 Star",
+    "image": "https://images.pexels.com/photos/2101187/pexels-photo-2101187.jpeg",
+    "map": "https://www.google.com/maps/search/?api=1&query=Wynn+Las+Vegas"
+  }
+],
+"days": [
+  {
+    "day": 1,
+    "name": "Las Vegas Strip",
+    "description": "Iconic boulevard lined with casinos, hotels, and entertainment venues.",
+    "ticket": "Free",
+    "travelTime": "Central location",
+    "image": "https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Las+Vegas+Strip"
+  },
+  {
+    "day": 2,
+    "name": "Fremont Street Experience",
+    "description": "LED canopy, street performances, zipline, and live music.",
+    "ticket": "Free (zipline extra)",
+    "travelTime": "15 mins from Strip",
+    "image": "https://images.pexels.com/photos/2111017/pexels-photo-2111017.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fremont+Street+Las+Vegas"
+  },
+  {
+    "day": 3,
+    "name": "Bellagio Fountains & Conservatory",
+    "description": "Dancing water shows and botanical displays inside the Bellagio.",
+    "ticket": "Free",
+    "travelTime": "On the Strip",
+    "image": "https://images.pexels.com/photos/1642123/pexels-photo-1642123.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bellagio+Fountains"
+  },
+  {
+    "day": 4,
+    "name": "High Roller Observation Wheel",
+    "description": "World’s second tallest Ferris wheel with stunning city views.",
+    "ticket": "$25",
+    "travelTime": "5 mins from Strip",
+    "image": "https://images.pexels.com/photos/3687993/pexels-photo-3687993.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=High+Roller+Las+Vegas"
+  },
+  {
+    "day": 5,
+    "name": "Red Rock Canyon National Conservation Area",
+    "description": "Hiking trails, scenic drives, and desert landscapes just outside Vegas.",
+    "ticket": "$15 per vehicle",
+    "travelTime": "30 mins drive",
+    "image": "https://images.pexels.com/photos/221148/pexels-photo-221148.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Red+Rock+Canyon+Las+Vegas"
+  },
+  {
+    "day": 6,
+    "name": "The Mob Museum",
+    "description": "Interactive exhibits on the history of organized crime in America.",
+    "ticket": "$29.95",
+    "travelTime": "15 mins from Strip",
+    "image": "https://images.pexels.com/photos/768218/pexels-photo-768218.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Mob+Museum+Las+Vegas"
+  },
+  {
+    "day": 7,
+    "name": "Hoover Dam Day Trip",
+    "description": "Massive dam and engineering marvel straddling Nevada and Arizona.",
+    "ticket": "$10 (tour)",
+    "travelTime": "45 mins drive from Vegas",
+    "image": "https://images.pexels.com/photos/3849182/pexels-photo-3849182.jpeg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hoover+Dam"
+  }
+]
+},
+"jammu and kashmir, india": {
+  "destination": "Jammu and Kashmir, India",
+  "bannerImage": "https://cdn.britannica.com/74/144674-050-D5755E4F/Jhelum-River-Srinagar-India-Jammu-and-Kashmir.jpg",
+  "hotels": [
+    {
+      "name": "The Lalit Grand Palace Srinagar",
+      "location": "Srinagar, Jammu and Kashmir",
+      "rating": "5 Star",
+      "image": "https://images.pexels.com/photos/261169/pexels-photo-261169.jpeg",
+      "map": "https://www.google.com/maps/search/?api=1&query=The+Lalit+Grand+Palace+Srinagar"
+    },
+    {
+      "name": "Vivanta Dal View Srinagar",
+      "location": "Srinagar, Jammu and Kashmir",
+      "rating": "5 Star",
+      "image": "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
+      "map": "https://www.google.com/maps/search/?api=1&query=Vivanta+Dal+View+Srinagar"
+    },
+    {
+      "name": "Hotel Heevan Pahalgam",
+      "location": "Pahalgam, Jammu and Kashmir",
+      "rating": "4 Star",
+      "image": "https://images.pexels.com/photos/261169/pexels-photo-261169.jpeg",
+      "map": "https://www.google.com/maps/search/?api=1&query=Hotel+Heevan+Pahalgam"
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "name": "Dal Lake",
+      "description": "Famous lake in Srinagar known for its houseboats and Shikara rides.",
+      "ticket": "Free (Shikara ride charges vary)",
+      "travelTime": "Located in Srinagar",
+      "image": "https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Dal+Lake+Srinagar"
+    },
+    {
+      "day": 2,
+      "name": "Mughal Gardens",
+      "description": "Historic gardens in Srinagar including Nishat Bagh and Shalimar Bagh.",
+      "ticket": "INR 20",
+      "travelTime": "15-20 mins from city center",
+      "image": "https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mughal+Gardens+Srinagar"
+    },
+    {
+      "day": 3,
+      "name": "Gulmarg",
+      "description": "Popular hill station known for skiing and the Gulmarg Gondola.",
+      "ticket": "Gondola ride: INR 700-1000",
+      "travelTime": "2 hours from Srinagar",
+      "image": "https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gulmarg+Jammu+and+Kashmir"
+    },
+    {
+      "day": 4,
+      "name": "Sonamarg",
+      "description": "Scenic valley known for its glaciers and trekking routes.",
+      "ticket": "Free",
+      "travelTime": "2.5 hours from Srinagar",
+      "image": "https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sonamarg+Jammu+and+Kashmir"
+    },
+    {
+      "day": 5,
+      "name": "Pahalgam",
+      "description": "Picturesque town known for Betaab Valley and Aru Valley.",
+      "ticket": "Free",
+      "travelTime": "2 hours from Srinagar",
+      "image": "https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pahalgam+Jammu+and+Kashmir"
+    },
+    {
+      "day": 6,
+      "name": "Vaishno Devi Temple",
+      "description": "Sacred Hindu temple located in the Trikuta Mountains.",
+      "ticket": "Free (Helicopter ride charges extra)",
+      "travelTime": "2 hours from Jammu",
+      "image": "https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vaishno+Devi+Temple+Jammu"
+    },
+    {
+      "day": 7,
+      "name": "Raghunath Temple",
+      "description": "Historic temple complex in Jammu dedicated to Lord Rama.",
+      "ticket": "Free",
+      "travelTime": "Located in Jammu city",
+      "image": "https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Raghunath+Temple+Jammu"
+    }
+  ]
+},
+"jaipur, india": {
+  "destination": "Jaipur, India",
+  "bannerImage": "https://cdn.odysseytraveller.com/app/uploads/2020/02/Jal-Mahal.jpg",
+  "hotels": [
+    {
+      "name": "Taj Rambagh Palace",
+      "location": "Jaipur, Rajasthan",
+      "rating": "5 Star",
+      "image": "https://images.pexels.com/photos/261169/pexels-photo-261169.jpeg",
+      "map": "https://www.google.com/maps/search/?api=1&query=Rambagh+Palace+Jaipur"
+    },
+    {
+      "name": "Fairmont Jaipur",
+      "location": "Jaipur, Rajasthan",
+      "rating": "5 Star",
+      "image": "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg",
+      "map": "https://www.google.com/maps/search/?api=1&query=Fairmont+Jaipur"
+    },
+    {
+      "name": "Umaid Bhawan Heritage House Hotel",
+      "location": "Jaipur, Rajasthan",
+      "rating": "4 Star",
+      "image": "https://images.pexels.com/photos/1589391/pexels-photo-1589391.jpeg",
+      "map": "https://www.google.com/maps/search/?api=1&query=Umaid+Bhawan+Jaipur"
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "name": "Amber Fort",
+      "description": "Hilltop fort with stunning architecture, elephant rides, and light & sound show.",
+      "ticket": "INR 100",
+      "travelTime": "30 mins from city center",
+      "image": "https://images.pexels.com/photos/208739/pexels-photo-208739.jpeg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Amber+Fort+Jaipur"
+    },
+    {
+      "day": 1,
+      "name": "Jal Mahal",
+      "description": "Picturesque palace located in the middle of Man Sagar Lake.",
+      "ticket": "Free (outer view)",
+      "travelTime": "15 mins from Amber Fort",
+      "image": "https://images.pexels.com/photos/208703/pexels-photo-208703.jpeg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jal+Mahal+Jaipur"
+    },
+    {
+      "day": 2,
+      "name": "City Palace",
+      "description": "Lavish royal residence with museums, courtyards, and art galleries.",
+      "ticket": "INR 200",
+      "travelTime": "Located in Old City",
+      "image": "https://images.pexels.com/photos/1586315/pexels-photo-1586315.jpeg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=City+Palace+Jaipur"
+    },
+    {
+      "day": 2,
+      "name": "Jantar Mantar",
+      "description": "UNESCO heritage site featuring ancient astronomical instruments.",
+      "ticket": "INR 50",
+      "travelTime": "Next to City Palace",
+      "image": "https://images.pexels.com/photos/207385/pexels-photo-207385.jpeg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jantar+Mantar+Jaipur"
+    },
+    {
+      "day": 3,
+      "name": "Hawa Mahal",
+      "description": "Iconic pink sandstone structure known as the ‘Palace of Winds’.",
+      "ticket": "INR 50",
+      "travelTime": "Located in Old City",
+      "image": "https://images.pexels.com/photos/208610/pexels-photo-208610.jpeg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hawa+Mahal+Jaipur"
+    },
+    {
+      "day": 3,
+      "name": "Shopping at Johari Bazaar",
+      "description": "Famous market for jewelry, bangles, textiles, and souvenirs.",
+      "ticket": "Free to browse",
+      "travelTime": "Walkable from Hawa Mahal",
+      "image": "https://images.pexels.com/photos/5067710/pexels-photo-5067710.jpeg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Johari+Bazaar+Jaipur"
+    },
+    {
+      "day": 4,
+      "name": "Nahargarh Fort",
+      "description": "Fort with panoramic city views, ideal for sunsets and photography.",
+      "ticket": "INR 50",
+      "travelTime": "30 mins from city center",
+      "image": "https://images.pexels.com/photos/5310956/pexels-photo-5310956.jpeg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nahargarh+Fort+Jaipur"
+    },
+    {
+      "day": 5,
+      "name": "Albert Hall Museum",
+      "description": "Historic museum showcasing art, weapons, and Egyptian mummy.",
+      "ticket": "INR 40",
+      "travelTime": "Located in Ram Niwas Garden",
+      "image": "https://images.pexels.com/photos/1585531/pexels-photo-1585531.jpeg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Albert+Hall+Museum+Jaipur"
+    },
+    {
+      "day": 5,
+      "name": "Birla Mandir",
+      "description": "White marble Hindu temple offering serene ambiance and city views.",
+      "ticket": "Free",
+      "travelTime": "15 mins from museum",
+      "image": "https://images.pexels.com/photos/207777/pexels-photo-207777.jpeg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Birla+Mandir+Jaipur"
+    },
+    {
+      "day": 6,
+      "name": "Chokhi Dhani",
+      "description": "Ethnic village resort with Rajasthani food, folk dance, and cultural shows.",
+      "ticket": "INR 800 (with dinner)",
+      "travelTime": "30 mins from city",
+      "image": "https://images.pexels.com/photos/208692/pexels-photo-208692.jpeg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Chokhi+Dhani+Jaipur"
+    },
+    {
+      "day": 7,
+      "name": "Galta Ji (Monkey Temple)",
+      "description": "Temple complex nestled in hills, known for natural springs and monkeys.",
+      "ticket": "Free",
+      "travelTime": "30 mins from city",
+      "image": "https://images.pexels.com/photos/5310952/pexels-photo-5310952.jpeg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Galta+Ji+Temple+Jaipur"
+    },
+    {
+      "day": 7,
+      "name": "Bapu Bazaar",
+      "description": "Bustling local market for Mojaris, textiles, handicrafts, and souvenirs.",
+      "ticket": "Free to enter",
+      "travelTime": "Central Jaipur",
+      "image": "https://images.pexels.com/photos/5067713/pexels-photo-5067713.jpeg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bapu+Bazaar+Jaipur"
+    }
+  ]
+},
+"warangal, india": {
+  "destination": "Warangal, India",
+  "bannerImage": "https://imgcld.yatra.com/ytimages/image/upload/v1472541714/Warangal_Weather.jpg",
+  "hotels": [
+    {
+      "name": "Hotel Ashoka",
+      "location": "Warangal, Telangana",
+      "rating": "3 Star",
+      "image": "https://i.pinimg.com/originals/94/ab/3f/94ab3fa8152cc658b79fc7dcf7f7f8e0.jpg",
+      "map": "https://www.google.com/maps/search/?api=1&query=Hotel+Ashoka+Warangal"
+    },
+    {
+      "name": "Vishnu Residency",
+      "location": "Warangal, Telangana",
+      "rating": "3 Star",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/119511625.jpg?k=3f7388c20bff48f5cb77cb14dd4c24c69aa57d66cc97fe49c5bb5ca2ba043983&o=&hp=1",
+      "map": "https://www.google.com/maps/search/?api=1&query=Vishnu+Residency+Warangal"
+    },
+    {
+      "name": "Landmark Hotel",
+      "location": "Hanamkonda, Warangal",
+      "rating": "4 Star",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVSQnsd2pX_68GNPrxhRBpFpttHtXRDIvRUH4S6pb39uf1UqqwVEvD0F9OTJh8aHLg4odMJ8SYMeu9l9ujeLeLtf-AgJuyjznBPle_NsawJTF0T7MjnzHgrQYlCrzPO_JiA8PfQmdJgoY/s1600/Landmark+Hotel.jpg",
+      "map": "https://www.google.com/maps/search/?api=1&query=Landmark+Hotel+Warangal"
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "name": "Warangal Fort",
+      "description": "Historical fort with intricate stone work and remnants from the Kakatiya dynasty.",
+      "ticket": "INR 20",
+      "travelTime": "15 mins from Hanamkonda",
+      "image": "https://static.toiimg.com/thumb/width-800,height-600,msid-59593450.cms",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Warangal+Fort"
+    },
+    {
+      "day": 1,
+      "name": "Thousand Pillar Temple",
+      "description": "Famous Kakatiya temple known for its architectural grandeur and carvings.",
+      "ticket": "Free",
+      "travelTime": "10 mins from Warangal Fort",
+      "image": "https://warangaltourism.in/images/places-to-visit-warangal/headers/thousand-1000-pillar-temple-warangal-hanamkonda-tourism-entry-fee-timings-holidays-reviews-header.jpg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Thousand+Pillar+Temple+Warangal"
+    },
+    {
+      "day": 2,
+      "name": "Bhadrakali Temple",
+      "description": "Ancient temple dedicated to Goddess Bhadrakali located on a hillock near a lake.",
+      "ticket": "Free",
+      "travelTime": "15 mins from Hanamkonda",
+      "image": "https://warangaltourism.in/images/places-to-visit-warangal/headers/bhadrakali-temple-warangal-tourism-entry-fee-timings-holidays-reviews-header.jpg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bhadrakali+Temple+Warangal"
+    },
+    {
+      "day": 2,
+      "name": "Bhadrakali Lake",
+      "description": "Scenic lake ideal for evening walks, boating, and relaxation.",
+      "ticket": "Free",
+      "travelTime": "Near Bhadrakali Temple",
+      "image": "https://www.joonsquare.com/usermanage/image/business/bhadrakali-lake-warangal-rural-52118/bhadrakali-lake-warangal-rural-bhadrakali-lake4.jpg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bhadrakali+Lake+Warangal"
+    },
+    {
+      "day": 3,
+      "name": "Kakatiya Musical Garden",
+      "description": "Garden with a musical fountain, perfect for families and kids.",
+      "ticket": "INR 25",
+      "travelTime": "10 mins from Bhadrakali Temple",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/6a/c2/20/screenshot-2019-09-28.jpg?w=1200&h=1200&s=1",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kakatiya+Musical+Garden+Warangal"
+    },
+    {
+      "day": 4,
+      "name": "Ramappa Temple",
+      "description": "UNESCO World Heritage Site with intricate carvings and floating bricks architecture.",
+      "ticket": "INR 40",
+      "travelTime": "1.5 hours from Warangal",
+      "image": "https://www.travelescape.in/wp-content/uploads/2021/07/Ramappa-Temple.jpg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramappa+Temple+Warangal"
+    },
+    {
+      "day": 5,
+      "name": "Laknavaram Lake",
+      "description": "Stunning lake with a hanging bridge, boating, and forest surroundings.",
+      "ticket": "INR 10",
+      "travelTime": "1.5 hours from Warangal",
+      "image": "https://www.laknavaram.co.in/pic/flexslider/1.jpg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Laknavaram+Lake+Warangal"
+    },
+    {
+      "day": 6,
+      "name": "Eturnagaram Wildlife Sanctuary",
+      "description": "Dense forest sanctuary home to various flora, fauna, and the Godavari River.",
+      "ticket": "INR 30",
+      "travelTime": "2 hours from Warangal",
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/14/79/59/fc/the-bogatha-waterfalls.jpg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Eturnagaram+Wildlife+Sanctuary"
+    },
+    {
+      "day": 7,
+      "name": "Pakhal Lake",
+      "description": "Serene man-made lake surrounded by forested hills, ideal for nature lovers.",
+      "ticket": "Free",
+      "travelTime": "1.5 hours from Warangal",
+      "image": "https://warangaltourism.in/images/places-to-visit-warangal/headers/pakhal-lake-and-wildlife-sanctuary-warangal-tourism-entry-fee-timings-holidays-reviews-header.jpg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pakhal+Lake+Warangal"
+    },
+    {
+      "day": 7,
+      "name": "Warangal Urban Shopping Complex",
+      "description": "Popular shopping destination for local crafts, handlooms, and Warangal bedsheets.",
+      "ticket": "Free to enter",
+      "travelTime": "Within city limits",
+      "image": "https://hblimg.mmtcdn.com/content/hubble/img/ttd_images/mmt/activities/m_Warangal_Jakotias_grand_central_1_l_359_640.jpg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Warangal+Urban+Shopping+Complex"
+    }
+  ]
+},
+"hyderabad, india": {
+  "destination": "Hyderabad, India",
+  "bannerImage": "https://media-cdn.tripadvisor.com/media/photo-m/1280/0f/98/f7/df/charminar.jpg",
+  "hotels": [
+    {
+      "name": "Taj Falaknuma Palace",
+      "location": "Hyderabad, India",
+      "rating": "5 Star",
+      "image": "https://www.varmalla.com/wp-content/uploads/2023/10/taj-falaknuma-hyderbad-651f2be7af98c.webp",
+      "map": "https://www.google.com/maps/search/?api=1&query=Taj+Falaknuma+Palace+Hyderabad"
+    },
+    {
+      "name": "ITC Kohenur, a Luxury Collection Hotel",
+      "location": "Hyderabad, India",
+      "rating": "5 Star",
+      "image": "https://www.itchotels.com/content/dam/itchotels/in/umbrella/itc/hotels/itckohenur-hyderabad/images/overview/headmast-desktop/hotel-facade.png",
+      "map": "https://www.google.com/maps/search/?api=1&query=ITC+Kohenur+Hyderabad"
+    },
+    {
+      "name": "Park Hyatt Hyderabad",
+      "location": "Hyderabad, India",
+      "rating": "5 Star",
+      "image": "https://lh3.googleusercontent.com/eEUpX46uINGgR7zsYTnlC-GBhi65e6j_2jpM53BDeLJHqFhgWv1Jx24RW4fempendszn162XwgbMK9m7yaQohzul=w961-h641-l80-e31",
+      "map": "https://www.google.com/maps/search/?api=1&query=Park+Hyatt+Hyderabad"
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "name": "Charminar",
+      "description": "Iconic 16th-century mosque with four grand arches and a bustling market nearby.",
+      "ticket": "INR 20 (Indian) / INR 250 (Foreigner)",
+      "travelTime": "Central Hyderabad",
+      "image": "https://media.istockphoto.com/id/1215274990/photo/high-wide-angle-view-of-charminar-in-the-night.jpg?s=1024x1024&w=is&k=20&c=8VF8tsWn8Iy5Ls8vTAo73rQntfzSYsK5pAAJDcP4oUE=",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Charminar+Hyderabad"
+    },
+    {
+      "day": 1,
+      "name": "Laad Bazaar",
+      "description": "Famous market known for bangles, traditional jewelry, and bridal wear.",
+      "ticket": "Free",
+      "travelTime": "5 mins walk from Charminar",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Laad_Bazaar_as_seen_from_charminar.jpg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Laad+Bazaar+Hyderabad"
+    },
+    {
+      "day": 2,
+      "name": "Golconda Fort",
+      "description": "Historic fortress with light & sound show and panoramic views of the city.",
+      "ticket": "INR 25 (Indian) / INR 300 (Foreigner)",
+      "travelTime": "45 mins from city center",
+      "image": "https://s7ap1.scene7.com/is/image/incredibleindia/golconda-fort-hyderabad-secunderabad-telangana-3-musthead-hero?qlt=82&ts=1726652909392",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Golconda+Fort+Hyderabad"
+    },
+    {
+      "day": 2,
+      "name": "Qutb Shahi Tombs",
+      "description": "Mausoleums of former rulers of Hyderabad with Indo-Islamic architecture.",
+      "ticket": "INR 20",
+      "travelTime": "10 mins from Golconda Fort",
+      "image": "https://media.telanganatoday.com/wp-content/uploads/2021/10/Qutb.jpg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Qutb+Shahi+Tombs+Hyderabad"
+    },
+    {
+      "day": 3,
+      "name": "Ramoji Film City",
+      "description": "World's largest film studio complex offering tours, shows, and theme park rides.",
+      "ticket": "INR 1350 (General)",
+      "travelTime": "1 hour from city center",
+      "image": "https://i.ytimg.com/vi/3mdX7FfJAvM/hq720.jpg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramoji+Film+City+Hyderabad"
+    },
+    {
+      "day": 4,
+      "name": "Hussain Sagar Lake & Buddha Statue",
+      "description": "Heart-shaped lake with ferry rides to a giant Buddha statue on an island.",
+      "ticket": "INR 55 (Boat ride)",
+      "travelTime": "15 mins from city center",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/44/e8/0c/buddha-statue.jpg?w=1200&h=-1&s=1",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hussain+Sagar+Lake+Hyderabad"
+    },
+    {
+      "day": 4,
+      "name": "Lumbini Park",
+      "description": "Urban park with musical fountains, boat rides, and evening light shows.",
+      "ticket": "INR 20",
+      "travelTime": "5 mins from Hussain Sagar",
+      "image": "https://s7ap1.scene7.com/is/image/incredibleindia/lumbini-park-hyderabad-secunderabad-telangana-attr-about?qlt=82&ts=1726653239723",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lumbini+Park+Hyderabad"
+    },
+    {
+      "day": 5,
+      "name": "Salar Jung Museum",
+      "description": "One of the largest museums in India housing global art and artifacts.",
+      "ticket": "INR 20 (Indian) / INR 500 (Foreigner)",
+      "travelTime": "20 mins from city center",
+      "image": "https://i.ytimg.com/vi/JqaD7ur6p-g/hq720.jpg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Salar+Jung+Museum+Hyderabad"
+    },
+    {
+      "day": 6,
+      "name": "Shilparamam",
+      "description": "Arts and crafts village showcasing traditional Indian culture and shopping.",
+      "ticket": "INR 40",
+      "travelTime": "30 mins from city center",
+      "image": "https://telanganatourism.gov.in/assets/images/destinations/shopping/shilparamam/theruralmuseum.jpg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Shilparamam+Hyderabad"
+    },
+    {
+      "day": 6,
+      "name": "Durgam Cheruvu Lakefront",
+      "description": "Peaceful lake with a cable bridge, walking path, and cafés.",
+      "ticket": "Free",
+      "travelTime": "10 mins from Shilparamam",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEyQHkxyGulFJSXwEdOY0vErF6humOStXauA&s",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Durgam+Cheruvu+Lake+Hyderabad"
+    },
+    {
+      "day": 7,
+      "name": "Birla Mandir",
+      "description": "White marble Hindu temple offering panoramic city views.",
+      "ticket": "Free",
+      "travelTime": "15 mins from city center",
+      "image": "https://s7ap1.scene7.com/is/image/incredibleindia/birla-temple-hyderabad-secunderabad-telangana-1-attr-hero?qlt=82&ts=1726652871883",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Birla+Mandir+Hyderabad"
+    },
+    {
+      "day": 7,
+      "name": "Nehru Zoological Park",
+      "description": "One of India's largest zoos, home to over 100 species.",
+      "ticket": "INR 60",
+      "travelTime": "30 mins from Birla Mandir",
+      "image": "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/75000/75501-Nehru-Zoological-Park.jpg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nehru+Zoological+Park+Hyderabad"
+    }
+  ]
+},
+"agra, india": {
+  "destination": "Agra, India",
+  "bannerImage": "https://foodandtravel.com/imager/hours/219609/Ministry-of-Tourism-Govt-of-India-595161_Taj-Mahal-Uttar-Pradesh-Aerial_821631bb23140209ea99c8f810f75634.jpg",
+  "hotels": [
+    {
+      "name": "The Oberoi Amarvilas",
+      "location": "Agra, India",
+      "rating": "5 Star",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/47406101.jpg?k=6bd9851de573a4cd5bd55580b4c849f6899eeaf2a8d88ca5404a5a320db90c5b&o=&hp=1",
+      "map": "https://www.google.com/maps/search/?api=1&query=The+Oberoi+Amarvilas+Agra"
+    },
+    {
+      "name": "ITC Mughal",
+      "location": "Agra, India",
+      "rating": "5 Star",
+      "image": "https://images.pexels.com/photos/1548026/pexels-photo-1548026.jpeg",
+      "map": "https://www.google.com/maps/search/?api=1&query=ITC+Mughal+Agra"
+    },
+    {
+      "name": "Taj Hotel & Convention Centre",
+      "location": "Agra, India",
+      "rating": "5 Star",
+      "image": "https://www.hotelscombined.com/rimg/himg/14/46/59/revato-56486-38174321-797398.jpg?width=968&height=607&crop=true",
+      "map": "https://www.google.com/maps/search/?api=1&query=Taj+Hotel+Agra"
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "name": "Taj Mahal",
+      "description": "Iconic white marble mausoleum and UNESCO World Heritage Site, a symbol of eternal love.",
+      "ticket": "INR 50 (Indians), INR 1100 (Foreigners)",
+      "travelTime": "Located in central Agra",
+      "image": "https://static.wixstatic.com/media/055605_65e20a7fcbc54e2e8720adfc2544c35e~mv2.jpg/v1/fill/w_1800,h_1082,al_c,q_85/taj_new_contant_edited.jpg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Taj+Mahal+Agra"
+    },
+    {
+      "day": 2,
+      "name": "Agra Fort",
+      "description": "Historic red sandstone fort with palaces, audience halls, and stunning views of the Taj.",
+      "ticket": "INR 50 (Indians), INR 650 (Foreigners)",
+      "travelTime": "10 mins from Taj Mahal",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Agra_03-2016_10_Agra_Fort.jpg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Agra+Fort"
+    },
+    {
+      "day": 3,
+      "name": "Mehtab Bagh",
+      "description": "Riverside garden offering a peaceful view of the Taj Mahal, especially at sunset.",
+      "ticket": "INR 30 (Indians), INR 250 (Foreigners)",
+      "travelTime": "15 mins from Agra Fort",
+      "image": "https://s7ap1.scene7.com/is/image/incredibleindia/mehtab-bagh-agra-uttar-pradesh-2-attr-hero?qlt=82&ts=1726650348307",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mehtab+Bagh+Agra"
+    },
+    {
+      "day": 4,
+      "name": "Fatehpur Sikri",
+      "description": "UNESCO-listed ancient Mughal city with palaces, mosques, and courtyards.",
+      "ticket": "INR 35 (Indians), INR 550 (Foreigners)",
+      "travelTime": "1 hour drive from Agra",
+      "image": "https://m.media-amazon.com/images/I/81NyZk91hRL.jpg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fatehpur+Sikri"
+    },
+    {
+      "day": 5,
+      "name": "Itimad-ud-Daulah (Baby Taj)",
+      "description": "Intricately carved marble mausoleum often called the 'Baby Taj'.",
+      "ticket": "INR 30 (Indians), INR 310 (Foreigners)",
+      "travelTime": "20 mins from city center",
+      "image": "https://img.onmanorama.com/content/dam/mm/en/travel/outside-kerala/images/2021/3/5/itimad-ud-daulah.jpg?w=1120&h=583",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Itimad-ud-Daulah+Agra"
+    },
+    {
+      "day": 6,
+      "name": "Tomb of Akbar the Great",
+      "description": "Grand tomb of Emperor Akbar set in a vast Mughal garden complex in Sikandra.",
+      "ticket": "INR 30 (Indians), INR 310 (Foreigners)",
+      "travelTime": "40 mins from Agra",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOYn4mvFlR05TP-Z-swP3CYrE_zNfxxdG4iQ&s",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Akbar+Tomb+Agra"
+    },
+    {
+      "day": 7,
+      "name": "Kinari Bazaar",
+      "description": "Bustling local market offering handicrafts, marble goods, textiles, and local street food.",
+      "ticket": "Free to explore",
+      "travelTime": "Near Jama Masjid, old Agra city",
+      "image": "https://www.utsavpedia.com/wp-content/uploads/2014/05/IMG_06851.jpg",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kinari+Bazaar+Agra"
+    }
+  ]
+}
+
+}

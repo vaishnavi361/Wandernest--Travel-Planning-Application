@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trip Plan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-image: url('assets/A5m0VJ.webp');
+      background-size: cover;           /* Makes the image cover the whole screen */
+      background-position: center;      /* Center the image */
+      background-repeat: no-repeat;     /* Prevent tiling */
+      min-height: 100vh;                /* Ensure body takes full height */
+      margin: 0;                        /* Remove default margin */
+    }
+    .dashboard-dropdown {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 2000;
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard-btn {
+    background: linear-gradient(135deg, #ff6b6b, #ff4757);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .dashboard-btn:hover {
+    background: linear-gradient(135deg, #ffc107, #ffb300); /* Gold hover accent */
+    color: #1a1a1a;
+    transform: scale(1.05);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 160px;
+    max-height: 150px;
+    overflow-y: auto;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    margin-top: 8px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  </style>
+</head>
+<body>
+  <div class="dashboard-dropdown">
+    <button class="dashboard-btn">Dashboard ⮟</button>
+    <div class="dropdown-content" id="dropdownContent">
+      <a href="profile.html" id="profileLink">Profile</a>
+      <a href="#" id="logoutLink">Logout</a>
+    </div>
+  </div>
+  <div class="max-w-5xl mx-auto bg-white shadow-md rounded-lg p-6 mt-8">
+    
+    <!-- Banner Image -->
+    <img id="banner-img" src="" alt="Destination Banner" class="w-full h-64 object-cover rounded-lg mb-4" />
+    
+    <!-- Title -->
+    <h1 id="trip-title" class="text-3xl font-bold mb-4">Your Trip Plan</h1>
+
+    <!-- Hotel Section -->
+    <div id="hotels" class="mb-8">
+      <h2 class="text-xl font-semibold mb-3">Hotel Recommendations</h2>
+      <div id="hotel-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <!-- Hotels injected here -->
+      </div>
+    </div>
+    
+    <!-- Day Plan Section -->
+    <div id="days-section">
+      <h2 class="text-xl font-semibold mb-3">Day Plan</h2>
+      <div id="days-container" class="space-y-4">
+        <!-- Days injected here -->
+      </div>
+    </div>
+
+    <!-- Matched Companions Section -->
+    <div id="companions-section" class="mt-8">
+      <h2 class="text-xl font-semibold mb-3">Matched Companions</h2>
+      <div id="companions-container" class="space-y-4">
+        <!-- Matched companions will be displayed here -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const tripTitle = document.getElementById('trip-title');
+    const bannerImg = document.getElementById('banner-img');
+    const daysContainer = document.getElementById('days-container');
+    const hotelGrid = document.getElementById('hotel-grid');
+    const companionsContainer = document.getElementById('companions-container');
+
+    const tripData = JSON.parse(localStorage.getItem('tripPlan'));
+    if (!tripData || !tripData.destination || !tripData.startDate || !tripData.endDate) {
+      tripTitle.textContent = "No valid trip data found.";
+      throw new Error("Trip data missing or invalid in localStorage.");
+    }
+
+    fetch('tripplan.json')
+      .then(res => res.json())
+      .then(data => {
+        const place = tripData.destination.toLowerCase().trim();
+        const days = calculateDays(tripData.startDate, tripData.endDate);
+        const trip = data[place];
+
+        if (!trip) {
+          tripTitle.textContent = `No trip found for ${tripData.destination}`;
+          return;
+        }
+
+        tripTitle.textContent = `${trip.destination} Trip Plan`;
+        bannerImg.src = trip.bannerImage || '';
+
+        // Load Hotels
+        (trip.hotels || []).forEach(hotel => {
+          const div = document.createElement('div');
+          div.className = "bg-gray-200 p-4 rounded-md text-center";
+          div.innerHTML = ` 
+            <a href="${hotel.map}" target="_blank">
+              <img src="${hotel.image || 'https://via.placeholder.com/300x200?text=No+Image'}" 
+                   class="w-full h-48 object-cover rounded-lg mb-2" 
+                   onerror="this.src='https://via.placeholder.com/300x200?text=No+Image'" />
+            </a>
+            <p class="font-semibold">${hotel.name}</p>
+            <p class="text-sm text-gray-600">${trip.destination}</p>
+            <p class="text-sm text-yellow-500">${hotel.rating}</p>
+          `;
+          hotelGrid.appendChild(div);
+        });
+
+        // Load Day Plans
+        let shownDays = 0;
+        for (let i = 1; i <= 7 && shownDays < days; i++) {
+          const dailyPlans = (trip.days || []).filter(d => d.day === i);
+          if (dailyPlans.length > 0) {
+            shownDays++;
+            dailyPlans.forEach(place => {
+              const div = document.createElement("div");
+              div.className = "bg-gray-100 p-4 rounded-lg flex items-start gap-4";
+              div.innerHTML = `
+                <a href="${place.mapsUrl}" target="_blank">
+                  <img src="${place.image || 'https://via.placeholder.com/100x100?text=No+Image'}" 
+                       class="w-24 h-24 object-cover rounded-md" 
+                       onerror="this.src='https://via.placeholder.com/100x100?text=No+Image'" />
+                </a>
+                <div>
+                  <p class="font-semibold">Day ${place.day}: ${place.name}</p>
+                  <p class="text-sm text-gray-600">${place.description}</p>
+                  <p class="text-sm text-gray-600">Ticket: ${place.ticket}</p>
+                  <p class="text-sm text-gray-600">Travel: ${place.travelTime}</p>
+                </div>
+                <div class="ml-auto text-gray-500 text-xl">📍</div>
+              `;
+              daysContainer.appendChild(div);
+            });
+          }
+        }
+      })
+      .catch(err => {
+        tripTitle.textContent = "Failed to load trip plan.";
+        daysContainer.innerHTML = `<p class="text-red-500">Oops! Something went wrong while loading your trip.</p>`;
+        console.error("Error loading tripPlans.json:", err);
+      });
+
+    // Display Matched Companions
+    const matches = JSON.parse(localStorage.getItem('matches'));
+    if (matches && matches.length > 0) {
+      matches.forEach((companion, index) => {
+        const div = document.createElement("div");
+        div.className = "bg-gray-200 p-4 rounded-md flex items-center gap-4";
+        div.innerHTML = `
+          <div>
+            <p class="font-semibold">Companion ${index + 1}</p>
+            <p><strong>Age Group:</strong> ${companion.ageGroup}</p>
+            <p><strong>Interests:</strong> ${companion.interests.join(", ")}</p>
+            <p><strong>Languages:</strong> ${companion.languages.join(", ")}</p>
+            <p><strong>Email:</strong> <a href="mailto:${companion.email}" class="text-blue-600 underline">${companion.email}</a></p>
+          </div>
+        `;
+        companionsContainer.appendChild(div);
+      });
+    } else {
+      companionsContainer.innerHTML = "<p>No companions matched yet.</p>";
+    }
+
+    function calculateDays(start, end) {
+      const startDate = new Date(start);
+      const endDate = new Date(end);
+      if (isNaN(startDate) || isNaN(endDate)) return 0;
+      const diff = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24)) + 1;
+      return Math.min(diff, 7);
+    }
+  </script>
+  <script>
+    const dashboardBtn = document.querySelector('.dashboard-btn');
+const dropdownContent = document.getElementById('dropdownContent');
+
+dashboardBtn.addEventListener('click', (e) => {
+  e.stopPropagation(); // prevent click bubbling
+  dropdownContent.style.display =
+    dropdownContent.style.display === 'block' ? 'none' : 'block';
+});
+
+// Close dropdown if clicked outside
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.dashboard-dropdown')) {
+    dropdownContent.style.display = 'none';
+  }
+});
+const logoutLink = document.getElementById('logoutLink');
+const profileLink = document.getElementById('profileLink');
+
+// Handle logout
+logoutLink.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  window.location.href = "index.html";
+});
+
+// Profile link already works by default, but if needed:
+profileLink.addEventListener('click', () => {
+  window.location.href = "profile.html";
+});
+
+  </script>
+</body>
+</html>
