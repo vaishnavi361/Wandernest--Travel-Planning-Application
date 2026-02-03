@@ -16,14 +16,40 @@ WanderNest is a smart travel planning web application designed to simplify and p
 
 ## 📂 Project Structure
  
-Wandernest/
-├── index.html
-├── style.css
-├── script.js
-├── tripplan.html
-├── tripplan.js
+WanderNest/
+│
+├── public/
+│   ├── index.html
+│   ├── login.html
+│   ├── profile.html
+│   ├── tripform.html
+│   ├── tripplan.html
+│   └── companion.html
+│
+├── css/
+│   ├── style.css
+│   ├── login.css
+│   ├── profile.css
+│   ├── tripform.css
+│   └── companion.css
+│
+├── js/
+│   ├── script.js
+│   ├── login.js
+│   ├── tripplan.js
+│   ├── stireTrip.js
+│   ├── companionlogic.js
+│   └── firebase.js
+│
+├── data/
+│   ├── tripplan.json
+│   └── companions.json
+│
 ├── package.json
-└── README.md
+├── package-lock.json
+├── README.md
+└── .gitignore
+
 
 
 
